@@ -338,12 +338,4 @@ form {
   .news-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  .news-text {
-    height: 300px;
-  }
-  
-  .news-text p {
-    overflow: hidden;
-  }
 }
