@@ -306,6 +306,14 @@ form {
   .news-grid {
     grid-template-columns: 1fr;
   }
+
+  .news-text p {
+    font-size: medium; 
+    line-height: 1.5;
+    color: gray;
+    overflow: hidden;
+    height: 100px;
+  }
 }
 
 @media all and (min-width: 1045px) {
@@ -315,6 +323,14 @@ form {
 
   .news-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .news-text p {
+    font-size: medium; 
+    line-height: 1.5;
+    color: gray;
+    overflow: hidden;
+    height: 200px;
   }
 }
 
@@ -338,7 +354,7 @@ form {
   .news-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  
+
   .news-text p {
     font-size: medium; 
     line-height: 1.5;
