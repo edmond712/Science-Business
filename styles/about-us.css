@@ -1,0 +1,276 @@
+body {
+  height: 1500px;
+  margin-top: 80px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(247, 247, 247);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: black;
+  display: flex;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.user-profile {
+  color: black;
+  border-radius: 25px;
+  background-color: rgb(170, 200, 255);
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: solid;
+  border-width: 2px;
+  flex-shrink: 0;
+}
+.user-profile:hover {
+  cursor: pointer;
+}
+
+.search-bar {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  flex: 1;
+  width: 0;
+}
+
+.search-btn, 
+.search-field {
+  border: solid;
+  height: 40px;
+  background-color: white;
+  margin-right: 10px;
+  border-radius: 15px;
+  border-color: black;
+  border-style: dashed;
+  border-width: 2px;
+  transition: 0.3s;
+}
+.search-field {
+  padding-left: 15px;
+}
+.search-btn:active {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.search-btn:hover {
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.left-sidebar {
+  display: block;
+  position: fixed;
+  left: 0px;
+  top: 60px;
+  width: 200px;
+  font-size: large;
+}
+
+.announcements {
+  background-color: rgb(255, 255, 255);
+  height: 900px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.right-sidebar {
+  display: block;
+  position: fixed;
+  right: 0px;
+  top: 60px;
+  width: 200px;
+  font-size: large;
+}
+
+.section-block {
+  background-color: rgb(247, 247, 247);
+  height: 450px;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-banner {
+  background-color: rgb(255, 255, 255);
+  height: 450px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.feed-banner {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: medium;
+  background-color: rgb(247, 247, 247); 
+}
+.section:hover {
+  cursor: pointer;
+}
+.section-chosen {
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: medium;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section-chosen:hover {
+  cursor: pointer;
+}
+.section .section-text,
+.section .section-icon {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.section:hover .section-text,
+.section:hover .section-icon {
+  opacity: 1;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  width: 125px;
+  justify-content: space-between;
+}
+.hamburger {
+  animation-name: rotation;
+  animation-duration: 1s;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.about-us-block {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: large;
+  margin: 20px;
+  padding: 20px;
+  height: 1300px;
+}
+.about-us-block p {
+  margin-bottom: 20px;
+}
+
+
+@media all and (max-width: 1045px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .left-sidebar,
+  .right-sidebar {
+    display: none;
+  }
+  
+  body {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .feed-banner {
+    height: 200px;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .user {
+    width: auto;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1045px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1800px) {
+  html,
+  .left-sidebar,
+  .right-sidebar {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .nav-bar {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
