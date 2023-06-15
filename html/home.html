@@ -2,28 +2,51 @@
 <html>
   <head>
     <title>Наука + Бизнес</title>
+    <!--главный стиль-->
     <link rel="stylesheet" href="../styles/home.css">
+    <!--поддержка всех браузеров и языка-->
     <meta charset="UTF-8">
+    <!--для нормального отображения-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--здесь связка к файлам сайдбара-->
+    <script src="../mobile-sidebar.js"></script>
+    <link rel="stylesheet" href="../mobile-sidebar.css">
   </head>
 
   <body>
     <header>
+      <!--навигационная панель-->
       <div class="nav-bar">
+        <!--сайдбар-->
+        <div id="mySidebar" class="sidebar">
+          <div class="closebtn" onclick="closeNav()">×</div>
+    
+          <a href="../html/home.html">
+            <div>Лента</div>
+          </a>
+    
+          <a href="../html/about-us.html">
+            <div>О нас</div>
+          </a>
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()" style="border: 0px; background-color: transparent;">
+            <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/hamburger-menu-icon.png"
+              style="
+                width: 30px;
+              ">
+          </button>
+        </div>
+        <!--логотип для пк-->
         <div class="logo">
           <p>
             Наука + Бизнес
           </p>
         </div>
 
-        <img 
-          class="hamburger"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
-          style="
-          height: 30px;
-          margin-right: 10px
-        ">
-
+        <!--поисковая строка-->
         <div class="search-bar">
           <form>
             <input class="search-field" type="search" placeholder="Я ищу...">
@@ -31,6 +54,7 @@
           </form>
         </div>
 
+        <!--аккаунт или профиль-->
         <div>
           <a class="user" style="text-decoration:none" href="registration.html">
             <p class="username">
@@ -45,12 +69,14 @@
       </div>
     </header>
 
+    <!--главное, т.е сама лента/фид-->
     <div class="feed">
       <div style="display: flex;">
         <img class="feed-banner" src="https://media.istockphoto.com/id/827581056/photo/team-of-medical-research-scientists-work-on-a-new-generation-disease-cure-they-use-microscope.jpg?s=612x612&w=0&k=20&c=Jph_wyRZKnBAxwhxdZYPBwcRNAKKK9Nnq71CWyaMk6U=">
       </div>
 
       <div class="news-grid">
+        <!--див одного новостного блока, образец 1 штуки-->
         <div class="news-block">
           <div class="news-aboba">
             <div class="news-author">
@@ -69,7 +95,7 @@
               <div class="news-inside">
                 <div class="news-main">
                   <div class="news-text">
-                    <p>
+                    <p style="font-size: medium; line-height: 1.5; color: gray; overflow: hidden;"> 
                       Все люди рождаются свободными и равными в своем достоинстве и правах. 
                       Они наделены разумом и совестью и должны поступать в отношении друг друга в духе братства.  
                     </p>
@@ -114,7 +140,7 @@
               <div class="news-inside">
                 <div class="news-main">
                   <div class="news-text">
-                    <p>
+                    <p style="font-size: medium; line-height: 1.5; color: gray;">
                       Все люди рождаются свободными и равными в своем достоинстве и правах. 
                       Они наделены разумом и совестью и должны поступать в отношении друг друга в духе братства.  
                     </p>
