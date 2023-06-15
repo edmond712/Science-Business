@@ -5,24 +5,40 @@
     <link rel="stylesheet" href="../styles/about-us.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../mobile-sidebar.js"></script>
+    <link rel="stylesheet" href="../mobile-sidebar.css">
   </head>
 
   <body>
     <header>
       <div class="nav-bar">
+        <!--сайдбар-->
+        <div id="mySidebar" class="sidebar">
+          <div class="closebtn" onclick="closeNav()">×</div>
+    
+          <a href="../html/home.html">
+            <div>Лента</div>
+          </a>
+    
+          <a href="../html/about-us.html">
+            <div>О нас</div>
+          </a>
+        </div>
+        
+        <div id="main">
+          <button class="openbtn" onclick="openNav()" style="border: 0px; background-color: transparent;">
+            <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/web-app-development/hamburger-menu-icon.png"
+              style="
+                width: 30px;
+              ">
+          </button>
+        </div>
+
         <div class="logo">
           <p>
             Наука + Бизнес
           </p>
         </div>
-
-        <img 
-          class="hamburger"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
-          style="
-          height: 30px;
-          margin-right: 10px
-        ">
 
         <div class="search-bar">
           <form>
